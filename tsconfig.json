@@ -6,8 +6,12 @@
     "baseUrl": "./",
     "paths": {
       "common": [
-        "./dist/common",
-        "./projects/common/src/public-api.ts"
+        /**
+         * This is the path to the common library when it is built.
+         * If you are using the common library without building it, you should use the path to the public-api.ts file.
+         */
+        // "./dist/common", // This is the path to the common library when it is built.
+        "./projects/common/src/public-api.ts" // This is the path to the common library when it is not built.
       ]
     },
     "outDir": "./dist/out-tsc",

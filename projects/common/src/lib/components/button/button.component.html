@@ -1,3 +1,7 @@
 @if (render()) {
 <button mat-button>{{ label() }}</button>
+} @else if(!render()) {
+<p>Rendering false</p>
+<p>Rendering not defined</p>
+} @else {
 }

@@ -10,5 +10,5 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class ButtonComponent {
   readonly label = input<string>(''); // Accepts a label value
-  readonly render = input<boolean>(false); // Accepts a boolean value
+  readonly render = input<any>(''); // Accepts a boolean value
 }
