@@ -1,5 +1,10 @@
 @if (render()) {
 <button mat-button>{{ label() }}</button>
+<button mat-raised-button
+        matTooltip="1 Info about the action"
+        aria-label="Button that displays a tooltip when focused or hovered over">
+  Action
+</button>
 } @else if(!render()) {
 <p>Rendering false</p>
 <p>Rendering not defined</p>
