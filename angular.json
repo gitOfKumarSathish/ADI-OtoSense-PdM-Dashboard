@@ -255,10 +255,7 @@
   },
   "cli": {
     "schematicCollections": [
-      "@schematics/angular",
-      "@schematics/angular/guard",
-      "@schematics/angular/module",
-      "@schematics/angular/service"
+      "@schematics/angular"
     ],
     "analytics": false,
     "packageManager": "npm",

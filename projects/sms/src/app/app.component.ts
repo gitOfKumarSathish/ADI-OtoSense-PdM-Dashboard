@@ -4,11 +4,12 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { ButtonComponent } from 'common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatSlideToggleModule, MatButtonModule, MatIconModule, MatDividerModule],
+  imports: [RouterOutlet, MatSlideToggleModule, MatButtonModule, MatIconModule, MatDividerModule, ButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
