@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'lib-button',
-  imports: [],
+  standalone: true,
+  imports: [MatButtonModule],
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
-
+  readonly label = input<string>(''); // Accepts a label value
+  readonly render = input<boolean>(false); // Accepts a boolean value
 }
