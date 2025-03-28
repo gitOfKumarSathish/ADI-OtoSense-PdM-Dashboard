@@ -1,0 +1,83 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+    "name": "ADI OtoSense™ PdM Dashboard",
+    "build": {
+        // Sets the run context to one level up instead of the .devcontainer folder.
+        "context": "..",
+        // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+        "dockerfile": "./Docker/prod.Dockerfile"
+    },
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    // "features": {},
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
+    // Uncomment the next line to run commands after the container is created.
+    // "postCreateCommand": "cat /etc/os-release",
+    // Configure tool-specific properties.
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "angular.ng-template",
+                "shardulm94.trailing-spaces",
+                "yzhang.markdown-all-in-one",
+                "ms-vscode.makefile-tools",
+                "waderyan.gitblame",
+                "steoates.autoimport",
+                "Arjun.swagger-viewer",
+                "streetsidesoftware.code-spell-checker",
+                "mike-co.import-sorter",
+                "formulahendry.auto-close-tag",
+                "formulahendry.auto-rename-tag",
+                "aaron-bond.better-comments"
+            ],
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "files.autoSave": "off",
+                "editor.defaultFormatter": "vscode.typescript-language-features",
+                "eslint.codeActionsOnSave.rules": null,
+                "editor.codeActionsOnSave": {
+                    "source.fixAll.eslint": "explicit"
+                },
+                "files.associations": {
+                    "projects/sms/src/assets/app.config": "jsonc",
+                    "addons.dashboard.setup.yml": "dockercompose",
+                    "addons.dashboard.builder.yml": "dockercompose"
+                },
+                "editor.rulers": [
+                    80,
+                    120
+                ],
+                "editor.wordWrap": "on",
+                "editor.tabSize": 2,
+                "prettier.printWidth": 80,
+                "prettier.tabWidth": 2,
+                "prettier.singleQuote": true,
+                "prettier.trailingComma": "all",
+                "prettier.arrowParens": "always",
+                "[typescript]": {
+                    "editor.formatOnSave": true,
+                    "editor.defaultFormatter": "vscode.typescript-language-features"
+                },
+                "[html]": {
+                    "editor.formatOnSave": true,
+                    "editor.defaultFormatter": "vscode.html-language-features"
+                },
+                "[jsonc]": {
+                    "editor.defaultFormatter": "vscode.json-language-features"
+                },
+                "redhat.telemetry.enabled": false,
+                "[yaml]": {
+                    "editor.defaultFormatter": "redhat.vscode-yaml"
+                },
+                "[scss]": {
+                    "editor.defaultFormatter": "vscode.css-language-features"
+                },
+                "[markdown]": {
+                    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+                }
+            }
+        }
+    }
+}
