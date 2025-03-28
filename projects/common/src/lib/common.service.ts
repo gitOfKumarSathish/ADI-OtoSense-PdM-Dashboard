@@ -6,4 +6,7 @@ import { Injectable } from '@angular/core';
 export class CommonService {
 
   constructor() { }
+  increment(value: number): number {
+    return value + 1;
+  }
 }

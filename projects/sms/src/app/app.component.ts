@@ -4,7 +4,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
-import { ButtonComponent } from 'common';
+import { ButtonComponent, CommonService } from 'common';
 
 @Component({
   selector: 'app-root',
@@ -15,4 +15,12 @@ import { ButtonComponent } from 'common';
 })
 export class AppComponent {
   title = 'sms';
+  count = 0
+  constructor(public commonService: CommonService) { }
+
+  increment() {
+    this.count = this.commonService.increment(this.count);
+  }
+
+
 }
