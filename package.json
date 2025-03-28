@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "sms": "ng serve sms",
-    "sls": "ng serve sls",
+    "start": "ng serve --port 4001",
+    "sms": "ng serve sms --port 4001",
+    "sls": "ng serve sls --port 4001",
     "sms-build": "ng build sms",
     "sls-build": "ng build sls",
     "build": "ng build",
