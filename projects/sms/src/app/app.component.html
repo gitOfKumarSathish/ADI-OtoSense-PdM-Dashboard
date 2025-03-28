@@ -8,24 +8,6 @@
 </section>
 <mat-divider></mat-divider>
 <section>
-  <div class="example-label">Raised</div>
-  <div class="example-button-row">
-    <button mat-raised-button>Basic</button>
-    <button mat-raised-button disabled>Disabled</button>
-    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
-</section>
-<mat-divider></mat-divider>
-<section>
-  <div class="example-label">Stroked</div>
-  <div class="example-button-row">
-    <button mat-stroked-button>Basic</button>
-    <button mat-stroked-button disabled>Disabled</button>
-    <a mat-stroked-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
-</section>
-<mat-divider></mat-divider>
-<section>
   <div class="example-label">Flat</div>
   <div class="example-button-row">
     <button mat-flat-button>Basic</button>
@@ -34,20 +16,7 @@
   </div>
 </section>
 <mat-divider></mat-divider>
-<section>
-  <div class="example-label">Icon</div>
-  <div class="example-button-row">
-    <div class="example-flex-container">
-      <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
-        <mat-icon>more_vert</mat-icon>
-      </button>
-      <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon">
-        <mat-icon>open_in_new</mat-icon>
-      </button>
-    </div>
-  </div>
-</section>
-<mat-divider></mat-divider>
+
 <section>
   <div class="example-label">FAB</div>
   <div class="example-button-row">
@@ -83,35 +52,12 @@
     </div>
   </div>
 </section>
-<section>
-  <div class="example-label">Extended Fab</div>
-  <div class="example-button-row">
-    <div class="example-flex-container">
-      <div class="example-button-container">
-        <button mat-fab extended>
-          <mat-icon>favorite</mat-icon>
-          Basic
-        </button>
-      </div>
-      <div class="example-button-container">
-        <button mat-fab extended disabled>
-          <mat-icon>favorite</mat-icon>
-          Disabled
-        </button>
-      </div>
-      <div class="example-button-container">
-        <a mat-fab extended routerLink=".">
-          <mat-icon>favorite</mat-icon>
-          Link
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+
 <mat-divider></mat-divider>
 
 <mat-slide-toggle>Toggle me!</mat-slide-toggle>
 <lib-button [label]="'Hey Dear! Click Me!'" [render]="false"></lib-button>
 <button (click)="increment()">Increment</button>
 <h1>{{count}}</h1>
+<button mat-button (click)="signOut()">Sign-out</button>
 <router-outlet />
