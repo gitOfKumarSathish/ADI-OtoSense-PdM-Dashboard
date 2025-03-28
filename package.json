@@ -4,6 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "sms": "ng serve sms",
+    "sls": "ng serve sls",
+    "sms-build": "ng build sms",
+    "sls-build": "ng build sls",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

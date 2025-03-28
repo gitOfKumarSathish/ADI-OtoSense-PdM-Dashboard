@@ -14,6 +14,8 @@ RUN npm install -g @angular/cli@19
 # Copy the package.json and package-lock.json (if present) first to install dependencies
 COPY package*.json ./
 
+Copy . .
+
 # Install dependencies
 RUN npm ci --verbose
   
